@@ -133,9 +133,6 @@ Skills 位于 ./skills/ 目录下。
 - 原始英文版：[obra/superpowers](https://github.com/obra/superpowers)（MIT 协议）
 - 感谢 [@obra](https://github.com/obra) 创建了这个优秀的项目
 - 姊妹项目：[agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh)（180 个 AI 智能体专家团队）
-- 姊妹项目：[awesome-claude-md](https://github.com/jnMetaCode/awesome-claude-md)（CLAUDE.md 最佳实践集合）
-- 姊妹项目：[ai-coding-101](https://github.com/jnMetaCode/ai-coding-101)（AI 编程从入门到精通）
-- 姊妹项目：[ai-ui-design](https://github.com/jnMetaCode/ai-ui-design)（AI 驱动的 UI 设计指南）
 
 ---
 
