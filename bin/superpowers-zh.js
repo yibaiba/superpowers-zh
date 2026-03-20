@@ -11,9 +11,13 @@ const AGENTS_SRC = resolve(__dirname, '..', 'agents');
 const PROJECT_DIR = process.cwd();
 
 const TARGETS = [
-  { name: 'Claude Code', dir: '.claude/skills' },
-  { name: 'Cursor',      dir: '.cursor/skills' },
-  { name: 'Codex CLI',   dir: '.codex/skills'  },
+  { name: 'Claude Code',   dir: '.claude/skills' },
+  { name: 'Cursor',        dir: '.cursor/skills' },
+  { name: 'Codex CLI',     dir: '.codex/skills'  },
+  { name: 'Kiro',          dir: '.kiro/steering'  },
+  { name: 'Trae',          dir: '.trae/rules'     },
+  { name: 'Antigravity',   dir: '.antigravity'    },
+  { name: 'VS Code',       dir: '.github'         },
 ];
 
 function countDirs(dir) {
@@ -31,7 +35,8 @@ function showHelp() {
     npx superpowers-zh --version 显示版本
 
   说明：
-    自动检测当前项目使用的 AI 编程工具（.claude/ .cursor/ .codex/），
+    自动检测当前项目使用的 AI 编程工具：
+    Claude Code / Cursor / Codex / Kiro / Trae / Antigravity / VS Code
     将 ${countDirs(SKILLS_SRC)} 个 skills 安装到对应目录。
     如果未检测到任何工具，默认安装到 .claude/skills/。
 

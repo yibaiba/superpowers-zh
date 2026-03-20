@@ -16,7 +16,7 @@ Chinese community edition of [superpowers](https://github.com/obra/superpowers),
 
 | 📦 翻译 Skills | 🇨🇳 中国特色 Skills | 🤖 支持工具 |
 |:---:|:---:|:---:|
-| **14** | **5** | **Claude Code / Cursor / Codex / Gemini** |
+| **14** | **5** | **Claude Code / Cursor / Codex / Kiro / Trae / Antigravity / VS Code / Gemini** |
 
 ---
 
@@ -72,20 +72,29 @@ npx superpowers-zh
 # 克隆仓库
 git clone https://github.com/jnMetaCode/superpowers-zh.git
 
-# 复制 skills 到你的项目
-cp -r superpowers-zh/skills /your/project/.claude/skills
-# 或
-cp -r superpowers-zh/skills /your/project/.cursor/skills
+# 复制 skills 到你的项目（选择你使用的工具）
+cp -r superpowers-zh/skills /your/project/.claude/skills      # Claude Code
+cp -r superpowers-zh/skills /your/project/.cursor/skills      # Cursor
+cp -r superpowers-zh/skills /your/project/.codex/skills       # Codex CLI
+cp -r superpowers-zh/skills /your/project/.kiro/steering      # Kiro
+cp -r superpowers-zh/skills /your/project/.trae/rules         # Trae
+cp -r superpowers-zh/skills /your/project/.antigravity        # Antigravity
 ```
 
-### 方式三：在 CLAUDE.md 中引用
+### 方式三：在配置文件中引用
 
-```markdown
-# CLAUDE.md
+根据你使用的工具，在对应配置文件中引用 skills：
 
-请使用 superpowers-zh 的 skills 来指导你的工作流程。
-Skills 位于 ./skills/ 目录下。
-```
+| 工具 | 配置文件 | 说明 |
+|------|---------|------|
+| Claude Code | `CLAUDE.md` | 项目根目录 |
+| Kiro | `.kiro/steering/*.md` | 支持 always/globs/手动三种模式 |
+| Trae | `.trae/rules/project_rules.md` | 项目级规则 |
+| Antigravity | `GEMINI.md` 或 `AGENTS.md` | 项目根目录 |
+| VS Code | `.github/copilot-instructions.md` | Copilot 自定义指令 |
+| Cursor | `.cursor/rules/*.md` | 项目级规则目录 |
+
+> **详细安装指南**：[Kiro](docs/README.kiro.md) · [Trae](docs/README.trae.md) · [Antigravity](docs/README.antigravity.md) · [VS Code](docs/README.vscode.md) · [Codex](docs/README.codex.md) · [OpenCode](docs/README.opencode.md)
 
 ---
 
